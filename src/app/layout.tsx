@@ -10,7 +10,7 @@ interface AppLayoutProps {
     children: React.ReactNode
 }
 
-export const AppLayout = ({children, title, renderHeader, renderSidebar}: AppLayoutProps) => {
+export const AppLayout = ({children, title, renderHeader = true, renderSidebar}: AppLayoutProps) => {
   const docTitleText = title ? `${title} | Portfolio` : 'Portfolio'
   return (
     <>
